@@ -1,0 +1,22 @@
+{
+  "name": "realtimechatapp",
+  "version": "1.0.0",
+  "description": "built realtimechatapp backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longluv1605/realtimeChatApp.git"
+  },
+  "author": "Long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longluv1605/realtimeChatApp/issues"
+  },
+  "homepage": "https://github.com/longluv1605/realtimeChatApp#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
