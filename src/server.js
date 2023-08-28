@@ -1,19 +1,24 @@
 require("dotenv").config();
 const express = require("express");
-const path = require("path");
-const config = require("./config/config");
+/* const config = require("./config/config");*/
 const webRoutes = require("./routes/web");
+const configViewEngineAndStaticFiles = require("./config/configViewEngineAndStaticFiles");
 
 const app = express();
+app.use(express.json());
 const port = process.env.PORT || 8080;
 const hostname = process.env.HOST_NAME;
 
 //Config
-config(app);
+/* config.config(app); */
+configViewEngineAndStaticFiles(app);
 
 // Def route
 app.use("/", webRoutes);
 
+
+// Query
+
 app.listen(port, hostname, () => {
-    console.log(`Example app listening on port ${port}`);
+    console.log(`Server http://${hostname}:${port}`);
 });

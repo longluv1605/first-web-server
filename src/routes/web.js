@@ -1,14 +1,13 @@
+const homeController = require("../controllers/homeController");
+const infoController = require("../controllers/infoController");
 const express = require("express");
 const router = express.Router();
 
-// Def route
-router.get("/", (req, res) => {
-    res.send("<h1>Hello World!</h1>");
-});
+// Home
+router.get("/", homeController.getHomePage);
+router.post("/create", homeController.postHomePage);
 
-// Def route
-router.get("/info", (req, res) => {
-    res.render("test.ejs");
-});
+// Info
+router.get("/info", infoController.getInfoPage);
 
 module.exports = router;
