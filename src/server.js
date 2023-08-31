@@ -5,12 +5,13 @@ const webRoutes = require("./routes/web");
 const configViewEngineAndStaticFiles = require("./config/configViewEngineAndStaticFiles");
 
 const app = express();
-app.use(express.json());
 const port = process.env.PORT || 8080;
 const hostname = process.env.HOST_NAME;
 
 //Config
 /* config.config(app); */
+app.use(express.json()); // config for request.body
+app.use(express.urlencoded({ extended: true})); // config for HTML FORM data
 configViewEngineAndStaticFiles(app);
 
 // Def route

@@ -1,13 +1,13 @@
 const homeController = require("../controllers/homeController");
-const infoController = require("../controllers/infoController");
+const registerController = require("../controllers/registerController");
 const express = require("express");
 const router = express.Router();
 
 // Home
 router.get("/", homeController.getHomePage);
-router.post("/create", homeController.postHomePage);
 
-// Info
-router.get("/info", infoController.getInfoPage);
+// Register
+router.post("/register", registerController.postRegisterPage);
+router.get("/register", registerController.getRegisterPage);
 
 module.exports = router;
