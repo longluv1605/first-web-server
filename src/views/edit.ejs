@@ -19,21 +19,21 @@
     <body>
         <div class="topnav">
             <a href="/">Home</a>
-            <a class="active" href="/register">Register</a>
+            <a href="/register">Register</a>
         </div>
         <div class="sign-up">
-            <form action="/register" target="_self" method="POST">
+            <form action="/edit/<%=data.id%>" target="_self" method="POST">
                 <fieldset>
                     <legend>Register</legend>
 
                     <div class="input-group">
                         <label>Username: </label>
-                        <input type="text" name="username" />
+                        <input type="text" name="username" value="<%=data.username%>"/>
                     </div>
 
                     <div class="input-group">
                         <label>Password: </label>
-                        <input type="text" name="password" />
+                        <input type="text" name="password" value="<%=data.password%>"/>
                     </div>
                     <div>
                         <button class="sign-up-button">Sign up</button>
