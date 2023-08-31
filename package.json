@@ -1,7 +1,7 @@
 {
-    "name": "realtimechatapp",
+    "name": "first-web-server",
     "version": "1.0.0",
-    "description": "built realtimechatapp backend",
+    "description": "built first-web-server backend",
     "main": "src/server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/longluv1605/realtimeChatApp.git"
+        "url": "git+https://github.com/longluv1605/first-web-server.git"
     },
     "author": "Long",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/longluv1605/realtimeChatApp/issues"
+        "url": "https://github.com/longluv1605/first-web-server/issues"
     },
-    "homepage": "https://github.com/longluv1605/realtimeChatApp#readme",
+    "homepage": "https://github.com/longluv1605/first-web-server#readme",
     "dependencies": {
         "dotenv": "^16.3.1",
         "ejs": "^3.1.9",
