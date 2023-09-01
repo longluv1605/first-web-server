@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 /* const config = require("./config/config");*/
 const webRoutes = require("./routes/web");
+const initAPIrouters = require('./routes/api');
 const configViewEngineAndStaticFiles = require("./config/configViewEngineAndStaticFiles");
 
 const app = express();
@@ -16,6 +17,9 @@ configViewEngineAndStaticFiles(app);
 
 // Def route
 app.use("/", webRoutes);
+
+// Def API
+initAPIrouters(app);
 
 
 // Query
