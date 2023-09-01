@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/longluv1605/first-web-server.git"
+        "url": "https://github.com/longluv1605/first-web-server.git"
     },
     "author": "Long",
     "license": "ISC",
