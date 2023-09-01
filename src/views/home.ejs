@@ -46,6 +46,7 @@
             text-align-last: center;
             font-size: 25px;
             font-weight: 600;
+            border-bottom: 2px solid #000000;
         }
 
         button {
@@ -73,8 +74,16 @@
                     <td><%= account.username %></td>
                     <td><%= account.password %></td>
                     <td>
-                        <button onclick="window.location = '/edit/<%=account.id%>'">Edit</button>
-                        <button>Delele</button>
+                        <button
+                            onclick="window.location = '/edit/<%=account.id%>'"
+                        >
+                            Edit
+                        </button>
+                        <button
+                            onclick="window.location = '/delete/<%=account.id%>'"
+                        >
+                            Delele
+                        </button>
                     </td>
                 </tr>
                 <% } %>

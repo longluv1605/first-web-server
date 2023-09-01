@@ -8,7 +8,7 @@ const putEditPage = async (req, res) => {
 
 const getEditPage = async (req, res) => {
     const result = await services.getAccounts(req.params.id);
-    console.log(result);
+    // console.log(result);
     return res.render("edit.ejs", { data: result });
 };
 

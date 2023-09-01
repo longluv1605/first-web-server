@@ -11,15 +11,27 @@
         }
         label {
             margin-left: 5px;
+            background-color: beige;
+            border-bottom: 1px solid #000;
         }
         legend {
             margin-left: 5px;
+            border: 1px solid #000;
+            background-color: bisque;
+        }
+        h1 {
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid #000;
         }
     </style>
     <body>
         <div class="topnav">
             <a href="/">Home</a>
             <a href="/register">Register</a>
+        </div>
+        <div>
+            <h1>Edit account</h1>
         </div>
         <div class="sign-up">
             <form action="/edit/<%=data.id%>" target="_self" method="POST">
@@ -28,15 +40,23 @@
 
                     <div class="input-group">
                         <label>Username: </label>
-                        <input type="text" name="username" value="<%=data.username%>"/>
+                        <input
+                            type="text"
+                            name="username"
+                            value="<%=data.username%>"
+                        />
                     </div>
 
                     <div class="input-group">
                         <label>Password: </label>
-                        <input type="text" name="password" value="<%=data.password%>"/>
+                        <input
+                            type="text"
+                            name="password"
+                            value="<%=data.password%>"
+                        />
                     </div>
                     <div>
-                        <button class="sign-up-button">Sign up</button>
+                        <button class="sign-up-button">Save</button>
                     </div>
                 </fieldset>
             </form>

@@ -6,6 +6,7 @@ const router = express.Router();
 
 // Home
 router.get("/", homeController.getHomePage);
+router.get("/delete/:id", homeController.deleteAccount);
 
 // Register
 router.post("/register", registerController.postRegisterPage);
